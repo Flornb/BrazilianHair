@@ -1,0 +1,18 @@
+.filters{
+    margin: 20px;
+    background-color: #3B5683;
+    padding: 10px;
+    border-radius: 8px;
+    font-family: 'Poppins';
+    position: relative;
+}
+
+.categories {
+    padding: 5px;
+    margin: 5px;
+    font-family: 'Poppins';
+}
+
+.rangeOfPrice {
+    margin: 5px;
+}

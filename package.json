@@ -1,0 +1,12 @@
+{
+  "name": "brazilianhair",
+  "version": "1.0.0",
+  "description": "<p>Welcome to Brazilian Hair E-commerce page!\r Features:\r   <ul>E-commerce Excellence: Browse through our collection of top-notch Brazilian hair care products and seamlessly purchase your favorites.</ul>\r   <ul>Dashboard Management for admins: Administer your store effortlessly with our intuitive dashboard—add, modify, or remove items hassle-free.</ul>\r   <ul>Immersive Animations: Dive into a captivating interface designed with engaging animations for an enjoyable browsing experience.</ul>\r   <ul>SEO-Enhanced: Boost your online presence with our SEO-focused design, ensuring visibility across search engines.</ul>\r   <ul>Cookie Handling: Prioritize user privacy with our efficient cookie management system, respecting user preferences.</ul>\r Sections:\r   <ul>Homepage Charm: Engage with an animated gallery showcasing our premium products and brand essence.</ul>\r   <ul>Store: Explore our product listings featuring enticing descriptions, images, and easy purchasing options.</ul>\r   <ul>Seamless Checkout: Effortlessly manage your shopping cart and proceed to checkout for a hassle-free purchase.</ul>\r   <ul>Appointment Scheduler: Book appointments for hair treatments with our integrated scheduling system.</ul>\r   <ul>Hair Care Insights: Discover our curated sections—Cronograma Capilar & Care Tips—for expert hair care guidance.</ul>\r   <ul>Contact Us: Connect with us easily for inquiries or personalized assistance.</ul>\r Experience the finesse of Brazilian hair with our comprehensive platform, offering an immersive e-commerce experience along with tailored sections to cater to all your hair care needs.\r </p>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
