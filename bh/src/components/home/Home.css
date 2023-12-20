@@ -2,13 +2,45 @@
     margin-top: 100px;
 }
 
-/* .container {
-
+ .home-container { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.networks-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .pres-title {
-
+    font-family: 'Playfair Display';
+    font-size: 2em;
+    text-shadow: 2px 2px 4px #3B5683;
+    margin: 0.5em;
+    margin-top: 2em;
 }
 .presentation {
+    font-family: 'Poppins';
+    color: #3B5683;
+    padding: 1em;
+} 
 
-} */
+.call{
+    font-family: 'Poppins';
+    color: #3B5683;
+    padding: 1em;
+    font-size: 1.5em;
+}
+
+.social-networks{
+    background-color: #3B5683;
+    width: 100px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    margin-bottom: 4em;
+}

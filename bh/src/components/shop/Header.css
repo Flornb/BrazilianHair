@@ -5,10 +5,12 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: #3B5683; /* Color de fondo */
+    box-shadow: 0 5px 6px -2px #130D29;
     height: 100px; /* Altura del header */
     position: fixed; /* Fijar el header en la parte superior */
     width: 100%; /* Ancho completo */
-    padding: 0 20px; /* Espaciado interno */ 
+    padding: 0 20px; /* Espaciado interno */
+    z-index: 9999; 
   
     /* Estilos para dispositivos móviles */
     @media (max-width: 768px) {
@@ -19,7 +21,6 @@ header {
       text-align: center;
     }
   }
-  
   .logo {
     display: flex;
     align-items: center;
@@ -47,6 +48,7 @@ header {
     align-items: center;
     width: 7%;
     margin-right: 30px;
+    cursor: pointer;
   }
   
   /* Ajustes para dispositivos móviles */

@@ -1,45 +1,60 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
+// import { GalleryAlisado1 } from '../../assets/Images'
 import './Gallery.css';
 
-export const Gallery = () => {
-  useEffect(() => {
-    const sideImages = document.querySelectorAll('.sideImages img');
-    const wrapperImageZoom = document.querySelector('.imageZoom');
 
-    wrapperImageZoom.style.backgroundImage = `url(${sideImages[0].src})`;
-
-    sideImages.forEach((img) => {
-      img.addEventListener('click', () => {
-        wrapperImageZoom.style.backgroundImage = `url(${img.src})`;
-      });
-    });
-
-    wrapperImageZoom.addEventListener('mousemove', (e) => {
-      const clientRect = wrapperImageZoom.getBoundingClientRect();
-      const posXZero = e.clientX - clientRect.left;
-      const posYZero = e.clientY - clientRect.top;
-      const posXMouse = Math.round(100 / (clientRect.width / posXZero));
-      const posYMouse = Math.round(100 / (clientRect.height / posYZero));
-
-      wrapperImageZoom.style.backgroundSize = '250% 250%';
-      wrapperImageZoom.style.backgroundPosition = `${posXMouse}% ${posYMouse}%`;
-    });
-
-    wrapperImageZoom.addEventListener('mouseleave', () => {
-      wrapperImageZoom.style.backgroundSize = '100% 100%';
-      wrapperImageZoom.style.backgroundPosition = '100% 100%';
-    });
-  }, []);
-
-  return (
-    <div className="gallery">
-      <div className="sideImages">
-        <img src=""  alt="alisado1" />
-        <img src="https://wallpaperaccess.com/full/2741662.jpg" alt="alisado2" />
-        <img src="https://wallpaperaccess.com/full/366926.jpg" alt="alisado3" />
-      </div>
-      <div className="imageZoom"></div>
-    </div>
-  );
-};
+  export const Gallery = () => {
+    const images = [
+      'https://res.cloudinary.com/dsbekpj9h/image/upload/v1702996338/Brazilian%20Hair/1_iiuh4c.jpg',
+      'https://res.cloudinary.com/dsbekpj9h/image/upload/v1702996346/Brazilian%20Hair/foto_home_ntbieq.jpg',
+    ];
+      
+    const [currentSlide, setCurrentSlide] = useState(0);
+      
+    const goToSlide = (index) => {
+      setCurrentSlide(index);
+        };
+      
+    useEffect(() => {
+      const interval = setInterval(() => {
+        goToNextSlide();
+      }, 4000); // Cambia la imagen cada 3 segundos (3000 milisegundos)
+      
+      return () => clearInterval(interval);
+    }, [currentSlide]);
+      
+    const goToNextSlide = () => {
+      const nextSlide = (currentSlide + 1) % images.length;
+      setCurrentSlide(nextSlide);
+    };
+      
+    return (
+      <section id="slider" className="container">
+        <ul className="slider-wrapper">
+          {images.map((image, index) => (
+            <li key={index} className={index === currentSlide ? 'current-slide' : ''}>
+              <img src={image} title="" alt="" />
+              <div className="caption">
+                <p>
+                  texto sobre lacios.. sacá tu turno!.
+                </p>
+              </div>
+            </li>
+          ))}
+        </ul>
+        <div className="clearfix">
+          <ul className="control-buttons">
+            {images.map((_, index) => (
+              <li
+                key={index}
+                className={index === currentSlide ? 'active' : ''}
+                onClick={() => goToSlide(index)}
+              >
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+    );     
+  };
 

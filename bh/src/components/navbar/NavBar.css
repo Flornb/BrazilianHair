@@ -8,6 +8,7 @@
   nav{
     background-color: #3B5683;
     font-family: 'Poppins';
+    z-index: 9999;
   }
   .main-menu{
     margin:0;

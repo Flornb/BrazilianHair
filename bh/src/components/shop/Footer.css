@@ -1,18 +1,18 @@
 .footer {
     position: fixed;
-    left: 16px;
+    left: 30px;
     bottom: 16px;
-    text-align: left;
-    background: rgba(0, 0, 0, .7);
-    padding: 8px 24px;
+    text-align: center;
+    background: #130D29;
+    padding: 15px 24px;
     border-radius: 32px;
-    opacity: .95;
-    backdrop-filter: blur(8px);
+    opacity: .8;
+    backdrop-filter: blur(10px);
   }
   
   .footer span {
     font-size: 14px;
-    color: #09f;
+    color: #3B5683;
     opacity: .8;
   }
   
