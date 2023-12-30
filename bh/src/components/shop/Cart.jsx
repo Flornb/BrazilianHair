@@ -1,7 +1,7 @@
 import './Cart.css'
 
 import { useId } from 'react'
-import { CartIcon, ClearCartIcon } from '../../assets/Icons.jsx'
+import { CartIcon, ClearCartIcon } from '../../assets/imgs/Icons.jsx'
 import { useCart } from '../../hooks/useCart.js'
 
 function CartItem ({ thumbnail, price, title, name, quantity, addToCart }) {
@@ -28,7 +28,9 @@ function CartItem ({ thumbnail, price, title, name, quantity, addToCart }) {
 export const Cart = () => {
   const cartCheckboxId = useId()
   const { cart, clearCart, addToCart } = useCart()
-
+  const calculateTotal = () => {
+    return cart.reduce((total, product) => total + product.price * product.quantity, 0);
+  };
   return (
     <>
       <label className='cart-button' htmlFor={cartCheckboxId}>
@@ -47,8 +49,10 @@ export const Cart = () => {
           ))}
         </ul>
         
-        {/* el carrito debe sumar el total de los productos agregados */}
-        <div className='total'></div>
+        {/* suma el total de los productos agregados */ }
+        <div className='total'>
+        Total: ${calculateTotal().toFixed(2)} 
+      </div>
 
         <button onClick={clearCart}>
           <ClearCartIcon />

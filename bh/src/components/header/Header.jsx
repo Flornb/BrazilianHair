@@ -1,5 +1,5 @@
 import React from 'react';
-import { IgIcon, WsIcon } from '../../assets/Icons'
+import { IgIcon, WsIcon } from '../../assets/imgs/Icons'
 import './Header.css'
 
 export function Header () {

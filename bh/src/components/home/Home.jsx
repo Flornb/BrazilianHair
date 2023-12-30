@@ -1,5 +1,5 @@
 // import { Card } from "./Card";
-import { IgIcon, WsIcon, LocationIcon } from "../../assets/Icons"
+import { IgIcon, WsIcon, LocationIcon } from "../../assets/imgs/Icons"
 import { Gallery } from "./Gallery";
 import './Home.css'
 
