@@ -50,11 +50,12 @@ export const Cart = () => {
         </ul>
         
         {/* suma el total de los productos agregados */ }
-        <div className='total'>
-        Total: ${calculateTotal().toFixed(2)} 
-      </div>
-
-        <button onClick={clearCart}>
+        <div className='total'>Total: ${calculateTotal().toFixed(2)} 
+        </div>
+        <button className='buycartbutton'>
+          <a href="URL_DE_PAGO" >Comprar</a>
+        </button>
+        <button className="clearcart" onClick={clearCart}>
           <ClearCartIcon />
         </button>
       </aside>

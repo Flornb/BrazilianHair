@@ -30,4 +30,3 @@ export const Orders = () => {
   );
 };
 
-export default Orders;

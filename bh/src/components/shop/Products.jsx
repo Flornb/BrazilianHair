@@ -3,7 +3,7 @@ import { Filters } from './Filters.jsx'
 import { AddToCartIcon, RemoveFromCartIcon } from '../../assets/imgs/Icons.jsx'
 import { useCart } from '../../hooks/useCart.js'
 
-export function Products ({ products }) {
+export const Products = ({ products }) => {
   const { addToCart, removeFromCart, cart } = useCart()
 
   const checkProductInCart = product => {
@@ -12,12 +12,11 @@ export function Products ({ products }) {
 
   return (
     <main className='products'>
-      <article className='title-section'>
-      <div class="dale"></div>
-      <div class="section-divisor">
-      <span className='store-title'>Nuestra Tienda</span>
+      <div className='title-section'>
+        <div class="section-divisor">
+          <span className='store-title'>Tienda</span>
+        </div>
       </div>
-      </article>
       <Filters />
       <ul>
         {products.slice(0, 10).map(product => {

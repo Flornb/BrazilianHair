@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
+import './Agenda.css'
 
-function TurneroForm() {
+export const Agenda = () => {
   const [selectedServices, setSelectedServices] = useState([]);
   const [selectedDate, setSelectedDate] = useState('');
   const [selectedTime, setSelectedTime] = useState('');
@@ -14,10 +15,27 @@ function TurneroForm() {
     }
   };
 
+  const obtenerHorariosDisponibles = (fechaSeleccionada) => {
+    const dia = new Date(fechaSeleccionada).getDay(); // Obtiene el día de la semana (0: domingo, 1: lunes, ..., 6: sábado)
+    
+    if (dia === 1 || dia === 2 || dia === 3 || dia === 4) {
+      return ['08:15', '12:00'];
+    } else if (dia === 5) {
+      return ['08:15']; 
+    } else {
+      return []; 
+    }
+  };
+  
+  const [horariosDisponibles, setHorariosDisponibles] = useState([]);
+  
   const handleDateChange = (e) => {
     setSelectedDate(e.target.value);
+    const horarios = obtenerHorariosDisponibles(e.target.value);
+    // Actualizar los horarios disponibles basados en la fecha seleccionada
+    setHorariosDisponibles(horarios);
   };
-
+   
   const handleTimeChange = (e) => {
     setSelectedTime(e.target.value);
   };
@@ -35,31 +53,43 @@ function TurneroForm() {
     console.log('Datos del turno:', data);
   };
 
+
   return (
-    <div className="container">
+    <main className='agenda'>
+    <div className='title-section'>
+      <div className="section-divisor">
+        <span className='store-title'>Turnos</span>
+      </div>
+    </div>
+    <div className="container-agenda">
       <h1>Solicitud de Turno</h1>
       <form id="turno-form" onSubmit={handleSubmit}>
         <div className="form-group">
-          <label htmlFor="tipo-servicio">Tipo de Servicio:</label>
+          <label htmlFor="tipo-servicio">Servicio:</label>
           <div className="checkbox-group">
-            <label><input type="checkbox" name="tipo-servicio" value="servicio1" onChange={handleServiceChange} /> Servicio 1</label>
-            <label><input type="checkbox" name="tipo-servicio" value="servicio2" onChange={handleServiceChange} /> Servicio 2</label>
-            <label><input type="checkbox" name="tipo-servicio" value="servicio3" onChange={handleServiceChange} /> Servicio 3</label>
+            <label className='checks'><input type="checkbox" name="tipo-servicio" value="servicio1" onChange={handleServiceChange} /> Primer Servicio</label>
+            <label className='checks'><input type="checkbox" name="tipo-servicio" value="servicio2" onChange={handleServiceChange} /> Segundo Servicio</label>
+            <label className='checks'><input type="checkbox" name="tipo-servicio" value="servicio3" onChange={handleServiceChange} /> Tercer Servicio</label>
           </div>
         </div>
         <div className="form-group">
-          <label htmlFor="fecha">Fecha:</label>
+          <label className='date_hour' htmlFor="fecha">Fecha:</label>
           <input type="date" name="fecha" value={selectedDate} onChange={handleDateChange} required />
         </div>
         <div className="form-group">
-          <label htmlFor="horario">Horario:</label>
-          <input type="time" name="horario" min="10:00" max="21:00" value={selectedTime} onChange={handleTimeChange} required />
+          <label className='date_hour' htmlFor="horario">Horario:</label>
+          <select name="horario" value={selectedTime} onChange={handleTimeChange} required>
+            <option value="">Selecciona un horario</option>
+            {horariosDisponibles.map((horario, index) => (
+              <option key={index} value={horario}>{horario}</option>
+            ))}
+          </select>
         </div>
-        <button type="submit">Solicitar Turno</button>
+        <button className="turno-button" type="submit">Solicitar Turno</button>
       </form>
     </div>
+  </main>
   );
 }
 
-export default TurneroForm;
 

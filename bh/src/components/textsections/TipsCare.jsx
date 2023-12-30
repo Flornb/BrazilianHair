@@ -3,9 +3,15 @@ import './TipsCare.css';
 
 export const TipsCare = () => {
   return (
+    <main className='tipsandcare'>
+      <div className='title-section'>
+        <div class="section-divisor">
+          <span className='store-title'>Tips & Care</span>
+        </div>
+      </div>
       <section className="hero-section"> 
       <article className='not-to-do'>
-        <h2 className='title-tips'>Tips & Cuidados</h2>
+        <h2 className='title-tips'>¿Cómo cuidar tu cabello lacio?</h2>
         <div className="card-grid"> 
           <a className="card" href="#">
             <div className="card__background" style={{ backgroundImage: 'url(https://res.cloudinary.com/dsbekpj9h/image/upload/v1703880973/Brazilian%20Hair/alisado_1_riamgq.webp)' }}></div>
@@ -80,6 +86,7 @@ export const TipsCare = () => {
         </div>
         </article>
       </section>
+      </main>
   );
 }
 

@@ -13,20 +13,11 @@
     align-items: center;
     justify-content: center;
 }
-
-.pres-title {
-    font-family: 'Playfair Display';
-    font-size: 2em;
-    text-shadow: 2px 2px 4px #3B5683;
-    margin: 0.5em;
-    margin-top: 2em;
-}
 .presentation {
     font-family: 'Poppins';
     color: #3B5683;
     padding: 2em;
 } 
-
 .call{
     font-family: 'Poppins';
     color: #3B5683;

@@ -7,6 +7,7 @@ import { IS_DEVELOPMENT } from './config.js'
 import { useFilters } from './hooks/useFilters.js'
 import { Cart } from './components/shop/Cart.jsx'
 import { CartProvider } from './context/cart.jsx'
+import { Agenda } from './components/agenda/Agenda.jsx'
 import { Home } from './components/home/Home.jsx'
 import { Cronograma } from "./components/textsections/Cronograma.jsx";
 import { TipsCare } from "./components/textsections/TipsCare";
@@ -24,6 +25,7 @@ function App () {
       <Home /> 
       <Products products={filteredProducts} />
       {IS_DEVELOPMENT && <Footer />}
+      <Agenda />
       <Cronograma />
       <TipsCare />
     </CartProvider>
