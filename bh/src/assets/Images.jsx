@@ -8,15 +8,3 @@ export function GalleryAlisado1 () {
   
     )
 }
-
-// export function GalleryAlisado2 () {
-//     return (
-
-//     )
-// }
-
-// export function GalleryAlisado3 () {
-//     return (
-
-//     )
-// }

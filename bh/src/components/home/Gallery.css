@@ -100,9 +100,28 @@
 	margin-bottom: 6px;
 }
 .slider-wrapper p {
-	font-size: 1.6em;
+	font-size: 1.2em;
 	font-weight: 300;
 	line-height: 1.4em;
+	font-family: 'Poppins';
+}
+.slider-wrapper button {
+	background-image: linear-gradient(15deg, #E9BABC 0%, #3B5683 150%);
+	margin: 10px;
+	border: none;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	transition-duration: .5s;
+	cursor: pointer;
+}
+.slider-wrapper a {
+	color: #ffffff;
+	font-family: 'Poppins';
+}
+.slider-wrapper button:hover{
+	background-image: linear-gradient(15deg, #3B5683 0%, #E9BABC 150%);
 }
 .control-buttons {
 	margin-top: 15px;

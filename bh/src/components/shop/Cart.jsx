@@ -25,7 +25,7 @@ function CartItem ({ thumbnail, price, title, name, quantity, addToCart }) {
   )
 }
 
-export function Cart () {
+export const Cart = () => {
   const cartCheckboxId = useId()
   const { cart, clearCart, addToCart } = useCart()
 

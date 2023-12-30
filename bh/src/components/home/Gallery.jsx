@@ -18,7 +18,7 @@ import './Gallery.css';
     useEffect(() => {
       const interval = setInterval(() => {
         goToNextSlide();
-      }, 4000); // Cambia la imagen cada 3 segundos (3000 milisegundos)
+      }, 4000); // Cambia img (4000 milisegundos)
       
       return () => clearInterval(interval);
     }, [currentSlide]);
@@ -36,8 +36,11 @@ import './Gallery.css';
               <img src={image} title="" alt="" />
               <div className="caption">
                 <p>
-                  texto sobre lacios.. sacá tu turno!.
+                  ¡Lucí un cabello lacio increible!
                 </p>
+                <button><a href="URL_DE_TURNOS" >
+                Sacá tu turno aquí
+                </a></button>
               </div>
             </li>
           ))}

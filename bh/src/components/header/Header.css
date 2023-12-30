@@ -4,20 +4,18 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #3B5683; /* Color de fondo */
+    background-color: #3B5683; 
     box-shadow: 0 5px 6px -2px #130D29;
-    height: 100px; /* Altura del header */
-    position: fixed; /* Fijar el header en la parte superior */
-    width: 100%; /* Ancho completo */
-    padding: 0 20px; /* Espaciado interno */
-    z-index: 9999; 
+    height: 100px; 
+    position: fixed;    
+    width: 100%; 
+    padding: 0 20px;
+    z-index: 5; 
   
-    /* Estilos para dispositivos móviles */
     @media (max-width: 768px) {
-      flex-direction: column;
+      flex-direction: row;
       justify-content: center;
-      height: auto;
-      padding: 15px;
+      padding: 3px;
       text-align: center;
     }
   }
@@ -27,26 +25,40 @@ header {
   }
   
   .logo img {
-    width: 100px; /* Ajusta el tamaño del logo */
+    width: 100px; 
     height: auto;
     margin-left: 20px; /* Espaciado entre el logo y el título */
   }
   
   .title {
-    font-family: 'Playfair Display';
-    font-weight: 500;
-    font-size: 25px;
     margin: 0;
     flex: 1; /* Toma el espacio restante */
     text-align: center; /* Centra el texto */
     color: #BFC0C0;
+  }
+  .first-title {
+    font-family: 'Playfair Display';
+    font-weight: 500;
+    font-size: 22px;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+  }
+  .second-title {
+    font-family: 'Poppins';
+    font-weight: 300;
+    font-size: 15px;
+    margin: 0;
+    flex: 1; /* Toma el espacio restante */
+    text-align: center; /* Centra el texto */
+    color: #BFC0C0;
+    letter-spacing: 0.2rem;
   }
   
   .socialicons {
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 7%;
+    width: 4rem;
     margin-right: 30px;
     cursor: pointer;
   }
@@ -55,6 +67,23 @@ header {
   @media (max-width: 768px) {
     .socialicons {
       margin-top: 15px;
+      flex-direction: column;
+      align-items: right;
+      width: 2rem;
+    }
+    .title{
+      padding: 10px;
+    }
+    .first-title{
+      font-size: 1rem;
+    }
+    .second-title {
+      font-size: 0.8rem;
+    }
+  }
+  @media (max-width: 450px) {
+    .title {
+      display: none;
     }
   }
   

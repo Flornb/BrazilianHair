@@ -8,6 +8,7 @@
     border-radius: 32px;
     opacity: .8;
     backdrop-filter: blur(10px);
+    z-index: 1;
   }
   
   .footer span {

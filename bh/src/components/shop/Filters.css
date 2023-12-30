@@ -4,6 +4,8 @@
     padding: 10px;
     border-radius: 8px;
     font-family: 'Poppins';
+    box-shadow: 2px 2px 4px 1px #3B5683;
+    color: #BFC0C0;
 }
 
 .categories {
@@ -13,5 +15,12 @@
 }
 
 .rangeOfPrice {
-    margin: 5px;
+    margin: 5px; 
+}
+   
+.categories {
+    background-color: #130D29;
+}
+.categories option {
+    color: #BFC0C0;
 }

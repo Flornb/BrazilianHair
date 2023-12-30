@@ -1,12 +1,15 @@
 import { products as initialProducts } from './assets/mocks/products.json'
 import { Products } from './components/shop/Products.jsx'
-import { Header } from './components/shop/Header.jsx'
+import { NavBar } from "./components/navbar/NavBar.jsx"
+import { Header } from './components/header/Header.jsx'
 import { Footer } from './components/shop/Footer.jsx'
 import { IS_DEVELOPMENT } from './config.js'
 import { useFilters } from './hooks/useFilters.js'
 import { Cart } from './components/shop/Cart.jsx'
 import { CartProvider } from './context/cart.jsx'
 import { Home } from './components/home/Home.jsx'
+import { Cronograma } from "./components/textsections/Cronograma.jsx";
+import { TipsCare } from "./components/textsections/TipsCare";
 
 function App () {
   const { filterProducts } = useFilters()
@@ -15,11 +18,14 @@ function App () {
 
   return (
     <CartProvider>
+      <NavBar />
       <Header />
       <Cart />
       <Home /> 
       <Products products={filteredProducts} />
       {IS_DEVELOPMENT && <Footer />}
+      <Cronograma />
+      <TipsCare />
     </CartProvider>
   )
 }

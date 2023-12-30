@@ -5,13 +5,13 @@ import './Filters.css'
 export function Filters () {
   const { filters, setFilters } = useFilters()
 
-  const minPriceFilterId = useId()
+  const maxPriceFilterId = useId()
   const categoryFilterId = useId()
 
   const handleChangeMinPrice = (event) => {
     setFilters(prevState => ({
       ...prevState,
-      minPrice: event.target.value
+      maxPrice: event.target.value
     }))
   }
 
@@ -29,17 +29,17 @@ export function Filters () {
     <section className='filters'>
 
       <div>
-        <label htmlFor={minPriceFilterId}>Precio mínimo:</label>
+        <label htmlFor={maxPriceFilterId}>Precio máx:</label>
         <input 
           className='rangeOfPrice'
           type='range'
-          id={minPriceFilterId}
-          min='0'
+          id={maxPriceFilterId}
+          min='100'
           max='500000'
           onChange={handleChangeMinPrice}
-          value={filters.minPrice}
+          value={filters.maxPrice}
         />
-        <span>${filters.minPrice}</span>
+        <span>${filters.maxPrice}</span>
       </div>
 
       <div>

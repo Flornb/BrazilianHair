@@ -12,6 +12,12 @@ export function Products ({ products }) {
 
   return (
     <main className='products'>
+      <article className='title-section'>
+      <div class="dale"></div>
+      <div class="section-divisor">
+      <span className='store-title'>Nuestra Tienda</span>
+      </div>
+      </article>
       <Filters />
       <ul>
         {products.slice(0, 10).map(product => {
@@ -24,7 +30,7 @@ export function Products ({ products }) {
                 alt={product.title}
               />
               <div>
-                <span>{product.name}</span> 
+                <span className='product-name'>{product.name}</span> 
                 <p>{product.description}</p>
                 <h3>${product.price}</h3>                 
               </div>
@@ -35,7 +41,7 @@ export function Products ({ products }) {
                 </a>
                 </button>
                 <button
-                  style={{ backgroundColor: isProductInCart ? '#130D29' : '#3B5683' }} onClick={() => {
+                  style={{ backgroundColor: isProductInCart ? '#3B5683' : '#130D29' }} onClick={() => {
                     isProductInCart
                       ? removeFromCart(product)
                       : addToCart(product)

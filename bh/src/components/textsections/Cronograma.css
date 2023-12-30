@@ -1,31 +1,46 @@
 
 body {
-  /* background: linear-gradient(#eee, #c9c9c9); */
   background-attachment: fixed;
 }
 
 .container-cronogr {
   margin: 0 auto;
   padding: 1em 0;
+  position: relative;
+  width: 100%;
+  height: auto;
+  box-shadow:  -2px 0px 5px 2px #F7EAe7;
+}
+
+.container-cronogr::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background-image: url("https://res.cloudinary.com/dsbekpj9h/image/upload/v1703019382/Brazilian%20Hair/lacio_1_mg6eyl.jpg");
   background-size: cover;
-  width: 100%;
-  height: 500px;
+  filter: brightness(60%); 
+  z-index: -1; 
+  background-attachment: fixed;
 }
 
 .text-box {
-  text-align: center;
+  /* text-align: center; */
   font-family: 'Poppins';
-  color: #E9BABC;
+  color: #130D29;
   padding: 1em;
-  text-shadow: 2px 2px 2px #000000;
+  font-weight: 600;
 }
 
 .hover-text {
   position: relative;
   top: 5px;
+  left: 5px;
   margin: 0 auto;
-  text-align: center;
+  text-align: left;
+  padding: 3px;
   width: 90%;
   transition: transform 300ms ease-in-out;
   transition: 600ms ease-in-out;
@@ -35,14 +50,16 @@ body {
   margin: 0 auto;
   font-family: 'Poppins';
   font-size: 2rem;
-  text-shadow: 2px 2px 4px #000000 ;
-  color: #BFC0C0;
+  text-shadow: 1px 1px 2px #F7EAe7 ;
+  color: #130D29;
   display: block;
   padding: 1em;
 }
 
 .hover-text:hover {
-  background: rgba(51,51,51,0.8);
+  background: rgba(191, 192, 192, 0.5);
   transform: scale(1.1, 1.1);
-  border: 2px #BFC0C0 solid;
+  border-radius: 1em;
+  padding: 1em; 
+  /* border: 2px #BFC0C0 solid; */
 }
