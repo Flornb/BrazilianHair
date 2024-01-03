@@ -23,7 +23,7 @@ export const Products = ({ products }) => {
           const isProductInCart = checkProductInCart(product)
 
           return (
-            <li key={product.id}>
+            <li key={product.id} className='product-card'>
               <img
                 src={product.thumbnail}
                 alt={product.title}
@@ -35,11 +35,11 @@ export const Products = ({ products }) => {
               </div>
               <div>
                 {/* agregar url para ir a pagar */}
-                <button className='buybutton'><a href="URL_DE_PAGO" >
+                <button className="submit-btn"><a href="https://wa.me/5493537304017" >
                   Comprar
                 </a>
                 </button>
-                <button
+                <button className="submit-btn"
                   style={{ backgroundColor: isProductInCart ? '#3B5683' : '#130D29' }} onClick={() => {
                     isProductInCart
                       ? removeFromCart(product)

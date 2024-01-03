@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import '../navbar/NavBar.css'
-import { HambIcon } from '../../assets/imgs/Icons';
+// import { HamburIcon } from '../../assets/imgs/Icons';
 
 export const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);

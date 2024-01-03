@@ -13,7 +13,7 @@ export const TipsCare = () => {
       <article className='not-to-do'>
         <h2 className='title-tips'>¿Cómo cuidar tu cabello lacio?</h2>
         <div className="card-grid"> 
-          <a className="card" href="#">
+          <div className="card">
             <div className="card__background" style={{ backgroundImage: 'url(https://res.cloudinary.com/dsbekpj9h/image/upload/v1703880973/Brazilian%20Hair/alisado_1_riamgq.webp)' }}></div>
             <div className="card__content">
               <p className="card__category">LAVADO:</p>
@@ -25,8 +25,8 @@ export const TipsCare = () => {
                 </ul>
                 </h3>
             </div>
-          </a>
-          <a className="card" href="#">
+          </div>
+          <div className="card">
             <div className="card__background" style={{ backgroundImage: 'url(https://res.cloudinary.com/dsbekpj9h/image/upload/v1703881076/Brazilian%20Hair/alisado_10_gpolna.jpg)' }}></div>
             <div className="card__content">
               <p className="card__category">CUIDADOS:</p>
@@ -38,8 +38,8 @@ export const TipsCare = () => {
                 </ul>
               </h3>
             </div>
-          </a>
-          <a className="card" href="#">
+          </div>
+          <div className="card">
             <div className="card__background" style={{ backgroundImage: 'url(https://res.cloudinary.com/dsbekpj9h/image/upload/v1703880971/Brazilian%20Hair/alisado_5_nwm3e8.webp)' }}></div>
             <div className="card__content">
               <p className="card__category">MÁS TIPS:</p>
@@ -50,13 +50,13 @@ export const TipsCare = () => {
                 </ul>
               </h3>
             </div>
-          </a>
+          </div>
         </div>
         </article>
         <article className='not-to-do'>
         <h2 className='title-tips'>¿Qué NO hacer?</h2>
         <div className="card-grid">  
-          <a className="card" href="#">
+          <div className="card" href="#">
             <div className="card__background" style={{ backgroundImage: 'url(https://res.cloudinary.com/dsbekpj9h/image/upload/v1703881232/Brazilian%20Hair/alisado_9_myj9at.webp)' }}></div>
             <div className="card__content">
               <p className="card__category">EVITAR...</p>
@@ -69,8 +69,8 @@ export const TipsCare = () => {
                 </ul>
               </h3>
             </div>
-          </a>
-          <a className="card" href="#">
+          </div>
+          <div className="card" href="#">
             <div className="card__background" style={{ backgroundImage: 'url(https://res.cloudinary.com/dsbekpj9h/image/upload/v1703880971/Brazilian%20Hair/alisado_2_xet7sm.webp)' }}></div>
             <div className="card__content">
               <p className="card__category">LOS NO...</p>
@@ -82,11 +82,11 @@ export const TipsCare = () => {
                 </ul>
               </h3>
             </div>
-          </a>
+          </div>
         </div>
         </article>
       </section>
-      </main>
+    </main>
   );
 }
 

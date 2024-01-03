@@ -10,7 +10,10 @@ import { CartProvider } from './context/cart.jsx'
 import { Agenda } from './components/agenda/Agenda.jsx'
 import { Home } from './components/home/Home.jsx'
 import { Cronograma } from "./components/textsections/Cronograma.jsx";
+
 import { TipsCare } from "./components/textsections/TipsCare";
+import { Contact } from "./components/contact/Contact.jsx";
+
 
 function App () {
   const { filterProducts } = useFilters()
@@ -27,7 +30,9 @@ function App () {
       {IS_DEVELOPMENT && <Footer />}
       <Agenda />
       <Cronograma />
+      <Video />
       <TipsCare />
+      <Contact />
     </CartProvider>
   )
 }

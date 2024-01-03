@@ -1,52 +1,48 @@
-import React from "react";
+import React from 'react';
+import './Contact.css';
+
 
 export const Contact = () => {
-    return (
-        <section className="container">
-          <div className="row">
-            <h3 className="center-align">CONTACTO</h3>
-            <article className="col s6 offset-s3">
-              <form method="POST" action="formulario-contacto.php">
-                <div className="input-field">
-                  <i className="material-icons prefix">perm_identity</i>
-                  <label htmlFor="nombre">Nombre</label>
-                  <input type="text" name="nombre" required />
-                </div>
-
-                <div className="input-field">
-                  <i className="material-icons prefix">person_pin</i>
-                  <label htmlFor="apellido">Apellido</label>
-                  <input type="text" name="apellido" required />
-                </div>
-
-                <div className="input-field">
-                  <i className="material-icons prefix">email</i>
-                  <label htmlFor="email">Email</label>
-                  <input type="email" name="email" required />
-                </div>
-
-                <div className="input-field">
-                  <i className="material-icons prefix">mode_edit</i>
-                  <label htmlFor="mensaje">Mensaje</label>
-                  <textarea
-                    name="mensaje"
-                    id=""
-                    rows="10"
-                    className="materialize-textarea"
-                    length="140"
-                    required
-                  ></textarea>
-                </div>
-
-                <p className="center-align">
-                  <button className="waves-effect waves-light btn" type="submit">
-                    <i className="material-icons right">send</i>enviar
-                  </button>
-                </p>
-              </form>
-            </article>
+  return (
+    <section id="contact">
+      <div className="contact-box">
+        <div className="contact-links">
+          <h2 className='contact-title'>CONTACTO</h2>
+          <div className="links">
+      
+            <div className="link">
+              <a href="#https://wa.me/5493537304017" className='contact-imgs'><img  src='https://res.cloudinary.com/dsbekpj9h/image/upload/v1704238891/Brazilian%20Hair/tel-icon_eq92ya.svg' alt="Whatsapp" /></a>
+            </div>
+            <div className="link">
+              <a href="#https://www.instagram.com/braziliannhair?igsh=amh3NDBxZ2FiM3Zj" className='contact-imgs'><img src="https://res.cloudinary.com/dsbekpj9h/image/upload/v1704237139/Brazilian%20Hair/instagram_xbzbqt.svg" alt="Instagram" /></a>
+            </div>
+            <div className="link">
+              <a href="#" className='contact-imgs'><img src="https://res.cloudinary.com/dsbekpj9h/image/upload/v1704237211/Brazilian%20Hair/email_uk37zt.svg" alt="Email" /></a>
+            </div>
           </div>
-        </section>
+        </div>
+        <div className="contact-form-wrapper">
+          <form>
+            <div className="form-item">
+              <input className='inputs-contact' type="text" name="sender" required />
+              <label className='text-boxs'>Nombre:</label>
+            </div>
+            <div className="form-item">
+              <input className='inputs-contact' type="tel" name="sender" required />
+              <label className='text-boxs'>Telefono:</label>
+            </div>
+            <div className="form-item">
+              <input className='inputs-contact' type="text" name="email" required />
+              <label className='text-boxs'>Email:</label>
+            </div>
+            <div className="form-item">
+              <textarea className="text-area-contact" name="message" required></textarea>
+              <label className='text-boxs'>Mensaje:</label>
+            </div>
+            <button className="submit-btn">Enviar</button>  
+          </form>
+        </div>
+      </div>
+    </section>
   );
-}
-
+};

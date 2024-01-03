@@ -1,10 +1,8 @@
 // import { Card } from "./Card";
-import { IgIcon, WsIcon, LocationIcon } from "../../assets/imgs/Icons"
+import React from 'react';
 import { Gallery } from "./Gallery";
 import './Home.css'
 
-
-import React from 'react';
 
 export const Home = () => {
 
@@ -22,11 +20,9 @@ export const Home = () => {
         <img src="https://res.cloudinary.com/dsbekpj9h/image/upload/v1703880242/Brazilian%20Hair/photo-output_pm5j4m.jpg" alt="nosotros" className="clip-polygon"></img>
         <strong className="call">¿Estás listo para transformar tu cabello?</strong>
         <div className="networks-container">
-          <div className="social-networks">
-            <IgIcon />
-            <WsIcon />
-            <LocationIcon /> 
-          </div>
+            <a href="#https://wa.me/5493537304017" className='social-networks'><img src='https://res.cloudinary.com/dsbekpj9h/image/upload/v1704238046/Brazilian%20Hair/whatsapp-icon_nj0wbp.svg' alt="Whatsapp" /></a>      
+            <a href="#https://www.instagram.com/braziliannhair?igsh=amh3NDBxZ2FiM3Zj" className='social-networks'><img src="https://res.cloudinary.com/dsbekpj9h/image/upload/v1704237139/Brazilian%20Hair/instagram_xbzbqt.svg" alt="Instagram" /></a>       
+            <a href="#" className='social-networks'><img className='social-networks' src="https://res.cloudinary.com/dsbekpj9h/image/upload/v1704237211/Brazilian%20Hair/email_uk37zt.svg" alt="Email" /></a>
         </div>
       </div>     
     </section>

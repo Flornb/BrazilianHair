@@ -85,7 +85,7 @@ export const Agenda = () => {
             ))}
           </select>
         </div>
-        <button className="turno-button" type="submit">Solicitar Turno</button>
+        <button className="submit-btn" type="submit">Solicitar Turno</button>
       </form>
     </div>
   </main>

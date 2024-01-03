@@ -1,0 +1,211 @@
+ 
+  #contact {
+    background-color: #3B5683;
+    filter: brightness(90%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-box {
+    width: 50rem;
+    height: 30rem;
+    margin: 50px 30px;
+    display: flex;
+    box-shadow: 0 5px 6px 0px #130D29;
+    border-radius: 10px;
+  } 
+  .contact-links, .contact-form-wrapper {
+    width: 50%;
+    padding: 5% 5% 5% 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  
+  .contact-links {
+    background-color: #BFC0C0;
+    background:
+      radial-gradient(
+        circle at 55% 92%, #E9BABC 0 7%, transparent 12.2%
+      ), 
+      radial-gradient(
+        circle at 94% 72%, #BFC0C0 0 5%, transparent 20.2%
+      ), 
+      radial-gradient(
+        circle at 20% max(78%, 350px), #BFC0C0 0 7%, transparent 17.2%
+      ), 
+      radial-gradient(
+        circle at 0% 0%, #E9BABC 0 20%, transparent 50.2%
+      ), 
+      #130D29;
+    border-radius: 10px 0 0 10px;
+  }
+  
+  .contact-form-wrapper {
+    background-color: #BFC0C0;
+    border-radius: 0 10px 10px 0;
+  }
+  
+  @media only screen and (max-width: 800px) {
+    .contact-links, .contact-form-wrapper {
+      width: 100%;
+    }
+    .contact-box {
+        flex-wrap: wrap;
+    }
+    
+    .contact-links {
+      border-radius: 10px 10px 0 0;
+    }
+    
+    .contact-form-wrapper {
+      border-radius: 0 0 10px 10px;
+    }
+  }
+  
+  @media only screen and (max-width: 400px) {
+    .contact-box {
+      width: 95%;
+      margin: 8% 5%;
+    }
+  }
+  
+  .contact-title {
+    font-family: 'Poppins';
+    color: #BFC0C0;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    text-align: center;
+    transform: scale(.95, 1);
+    text-shadow: 2px 2px 4px #130D29;
+  }
+  
+  .links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-items: center; */
+    /* padding-top: 50px; */
+  }
+  
+  .link {
+    margin: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .contact-imgs {
+    width: 45px;
+    height: 45px;
+    filter: 
+      hue-rotate(220deg)
+      drop-shadow(2px 4px 4px #130D29);
+    transition: 0.2s;
+    user-select: none;
+    background-color: #BFC0C0;
+    border-radius: 50px;
+    padding: .4rem;  
+  }
+  
+  .contact-imgs:hover {
+    transform: scale(1.1, 1.1);
+  }
+  
+  .contact-imgs:active {
+    transform: scale(1.1, 1.1);
+    filter: 
+      hue-rotate(220deg)
+      drop-shadow(2px 4px 4px #222)
+      sepia(0.3);
+  }
+  
+  .form-item {
+    position: relative;
+  }
+  
+  .text-boxs, .inputs-contact, .text-area-contact {
+    font-family: 'Poppins';
+  }
+  
+  .text-boxs {
+    position: absolute;
+    top: 10px;
+    left: 5%;
+    color: #BFC0C0;
+    font-size: clamp(14px, 1.5vw, 18px);
+    pointer-events: none;
+    user-select: none;
+  }
+  
+  .inputs-contact, .text-area-contact {
+    width: 100%;
+    outline: 0;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 12px;
+    font-size: clamp(15px, 1.5vw, 18px);
+    background-color: #130D29;
+  }
+  
+  .inputs-contact:focus+.text-boxs, 
+  .inputs-contact:valid+.text-boxs, 
+  .text-area-contact:focus+.text-boxs, 
+  .text-area-contact:valid+.text-boxs {
+    font-size: clamp(13px, 1.3vw, 16px);
+    color: #130D29;
+    top: -20px;
+    transition: all .225s ease;
+  }
+  
+  .submit-btn {
+    background-color: #130D29;
+    filter: drop-shadow(2px 2px 3px #130D29);
+    color: #BFC0C0;
+    font-family: "Poppins";
+    font-size: clamp(16px, 1.6vw, 18px);
+    display: block;
+    padding: 12px 20px;
+    margin: 7px auto;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    user-select: none;
+    transition: 0.2s;
+  }
+  
+  .submit-btn:hover {
+    transform: scale(1.1, 1.1);
+  }
+  
+  .submit-btn:active {
+    transform: scale(1.1, 1.1);
+    filter: sepia(0.5);
+  }
+  
+  @media only screen and (max-width: 800px) {
+    .contact-title {
+      font-size: clamp(40px, 10vw, 60px);
+    }
+    .inputs-contact, .text-area-contact { 
+        width: 90%;
+    }
+  }
+  
+  @media only screen and (max-width: 400px) {
+    .contact-title {
+      font-size: clamp(30px, 12vw, 60px);
+    }
+    
+    .links {
+      padding-top: 30px;
+    }
+    
+    .contact-imgs {
+      width: 38px;
+      height: 38px;
+    }
+  }
+  

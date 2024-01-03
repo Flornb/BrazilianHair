@@ -1,5 +1,4 @@
 import React from 'react';
-import { IgIcon, WsIcon } from '../../assets/imgs/Icons'
 import './Header.css'
 
 export function Header () {
@@ -15,12 +14,8 @@ export function Header () {
       </div>
       
       <div className='socialicons'>
-       
-          <IgIcon />
-        
-  
-          <WsIcon />
-
+        <a href="#https://wa.me/5493537304017"  className='icon' ><img src='https://res.cloudinary.com/dsbekpj9h/image/upload/v1704238891/Brazilian%20Hair/tel-icon_eq92ya.svg' alt="Whatsapp" /></a>      
+        <a href="#https://www.instagram.com/braziliannhair?igsh=amh3NDBxZ2FiM3Zj" className='icon'><img  src="https://res.cloudinary.com/dsbekpj9h/image/upload/v1704237139/Brazilian%20Hair/instagram_xbzbqt.svg" alt="Instagram" /></a>       
       </div>
 
     </header>

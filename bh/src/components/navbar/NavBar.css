@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 *{
   list-style: none;
   text-decoration:none; 
@@ -35,21 +34,21 @@
   .main-menu:after{
     font-family: 'Poppins';
     content:'';
-    /* background-image: ; */
+
     font-size: 2em;
     /* color:#3B5683; */
     text-align:center;
     position:absolute;
     top:0;
-    background-image: url('../../assets/imgs/menu-alt-1-svgrepo-com.svg');
-    background-size: contain;
+    background-image: url('https://res.cloudinary.com/dsbekpj9h/image/upload/v1704237139/Brazilian%20Hair/hamburmenu_pt9hae.svg');
+    background-size: cover;
     right:-50px;
-    width:50px;
+    width:60px;
     height:50px;
-    padding-top:5px;
-    background-color:#E9BABC;
+    /* padding-top:5px; */
+    background-color:#BFC0C0;
     cursor:pointer;
-    border-radius: 0px 0px 10px 0px;
+    border-radius: 14px 14px 14px 14px;
   }
   /* menu cerrado */
   .menu-wrapper{
