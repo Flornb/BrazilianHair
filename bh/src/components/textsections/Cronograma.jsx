@@ -4,7 +4,7 @@ import "./Cronograma.css";
 export const Cronograma = () => {
 
     return(
-        <main> 
+        <main id="cronograma"> 
             <div className='title-section'>
                 <div class="section-divisor">
                     <span className='store-title'>Cronograma Capilar</span>

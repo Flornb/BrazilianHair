@@ -92,6 +92,17 @@
 }
 
 /* Ajustes para dispositivos móviles y otras pantallas */
+@media (max-width: 910px) {
+  .products ul {
+    grid-template-columns: repeat(
+      3,
+      minmax(
+        200px,
+        1fr
+      )
+    );    
+  }
+}
 @media (max-width: 768px) {
   .store-title {
     font-size: 1.5rem;

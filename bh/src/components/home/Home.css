@@ -15,7 +15,9 @@
     justify-content: center;
     background-color: #3B5683;
     margin-bottom: 4em;
+    border-radius: 20px;
 }
+
 .presentation {
     font-family: 'Poppins';
     color: #3B5683;
@@ -29,11 +31,10 @@
 }
 
 .social-networks{
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     margin: 10px;
     padding: 10px;
-    border-radius: 8px;
     cursor: pointer;
 }
 .clip-polygon {

@@ -8,8 +8,8 @@
   }
   .contact-box {
     width: 50rem;
-    height: 30rem;
-    margin: 50px 30px;
+    height: auto;
+    margin: 30px 30px;
     display: flex;
     box-shadow: 0 5px 6px 0px #130D29;
     border-radius: 10px;
@@ -68,6 +68,10 @@
     .contact-box {
       width: 95%;
       margin: 8% 5%;
+    }
+    .contact-links {
+      display: flex;
+      flex-direction: column;
     }
   }
   
@@ -184,7 +188,9 @@
     transform: scale(1.1, 1.1);
     filter: sepia(0.5);
   }
-  
+  .submit-btn a {
+    color: #BFC0C0;
+  }
   @media only screen and (max-width: 800px) {
     .contact-title {
       font-size: clamp(40px, 10vw, 60px);
@@ -204,8 +210,11 @@
     }
     
     .contact-imgs {
-      width: 38px;
-      height: 38px;
+      width: 30px;
+      height: 30px;
+    }
+    #contact {
+      height: 800px;
     }
   }
   

@@ -1,0 +1,44 @@
+.video-section {
+    display: flex;
+    justify-content:center;
+    text-align: center;
+    align-items: center;
+    background-color: #BFC0C0;
+    padding: 1rem;
+  }
+.title-video-container{
+  flex-direction: column;
+}
+  .title-video {
+    font-family: 'Playfair Display';
+    text-transform: uppercase;
+    color: #3B5683;
+    text-shadow: 1px 2px #f7eae7;
+    margin: 20px;
+  }
+  
+  .position-relative {
+    position: relative !important;
+    display: inline-block;
+  }
+  
+  .position-relative video {
+    max-width: 100%;
+    border-radius: 20px 20px 20px 20px;
+  }
+  
+  .play-btn {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #000;
+    /* filter: brightness(50%); */
+    border: 2px solid #BFC0C0;
+    border-radius: 50%;
+    padding: 50px 50px 50px 50px;
+    background-image: url('https://res.cloudinary.com/dsbekpj9h/image/upload/v1704255572/Brazilian%20Hair/play_round_m5inpo.svg');
+    opacity: 0.7;
+  }
+  

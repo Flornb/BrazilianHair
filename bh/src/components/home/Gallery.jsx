@@ -38,7 +38,7 @@ import './Gallery.css';
                 <p>
                   ¡Lucí un cabello lacio increible!
                 </p>
-                <button><a href="URL_DE_TURNOS" >
+                <button className='sacatuturno'><a href="https://reservas-brazilianhair.glide.page" target="_blank">
                 Sacá tu turno aquí
                 </a></button>
               </div>

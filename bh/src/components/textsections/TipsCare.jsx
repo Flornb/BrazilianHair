@@ -3,9 +3,9 @@ import './TipsCare.css';
 
 export const TipsCare = () => {
   return (
-    <main className='tipsandcare'>
+    <main className='tipsandcare' id='tips'>
       <div className='title-section'>
-        <div class="section-divisor">
+        <div className="section-divisor">
           <span className='store-title'>Tips & Care</span>
         </div>
       </div>

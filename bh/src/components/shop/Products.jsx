@@ -11,9 +11,9 @@ export const Products = ({ products }) => {
   }
 
   return (
-    <main className='products'>
+    <main className='products' id='shop'>
       <div className='title-section'>
-        <div class="section-divisor">
+        <div className="section-divisor">
           <span className='store-title'>Tienda</span>
         </div>
       </div>

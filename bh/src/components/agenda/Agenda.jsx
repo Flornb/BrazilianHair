@@ -55,7 +55,7 @@ export const Agenda = () => {
 
 
   return (
-    <main className='agenda'>
+    <main className='agenda' id='agenda'>
     <div className='title-section'>
       <div className="section-divisor">
         <span className='store-title'>Turnos</span>

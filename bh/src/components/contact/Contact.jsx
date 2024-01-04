@@ -39,7 +39,7 @@ export const Contact = () => {
               <textarea className="text-area-contact" name="message" required></textarea>
               <label className='text-boxs'>Mensaje:</label>
             </div>
-            <button className="submit-btn">Enviar</button>  
+            <button className="submit-btn"><a href=''>Enviar</a></button>  
           </form>
         </div>
       </div>
