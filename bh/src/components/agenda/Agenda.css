@@ -1,17 +1,52 @@
 
 .container-agenda {
-    width: 80%;
-    margin: 50px auto;
+    width: 50%;
+    margin: 100px auto;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 10px;
-    background-image: linear-gradient(15deg, #E9BABC 0%, #3B5683 150%);
+    /* background-image: url('');
+    background-size:cover; */
     box-shadow: 1px 2px 10px #130D29;
     font-family: 'Poppins';  
     display: flex;
     flex-direction: column;  
+    position: relative;
+    height: 100%;
+    font-family: 'Poppins';
 }
-.form-group {
+.container-agenda::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("https://res.cloudinary.com/dsbekpj9h/image/upload/v1703881232/Brazilian%20Hair/alisado_9_myj9at.webp");
+    background-size: 100%;
+    filter: brightness(50%); 
+    z-index: -1; 
+    background-attachment: fixed;
+  }
+
+  .text-agenda {
+    text-shadow: 1px 1px 2px #130D29;
+    font-size: 2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  .text-turnos {
+    text-shadow: 1px 1px 2px #130D29;
+    font-size: 1rem;
+  }
+
+@media (max-width: 700px) {
+    .container-agenda {
+        width: 70%;
+    }
+}
+/* .form-group {
     margin-bottom: 20px;
 }
 .checkbox-group {
@@ -45,4 +80,4 @@
 .turno-button:hover {
   background-color: #3B5683;
     color: #130D29;
-}
+} */

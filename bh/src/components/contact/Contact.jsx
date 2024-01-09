@@ -11,13 +11,10 @@ export const Contact = () => {
           <div className="links">
       
             <div className="link">
-              <a href="#https://wa.me/5493537304017" className='contact-imgs'><img  src='https://res.cloudinary.com/dsbekpj9h/image/upload/v1704238891/Brazilian%20Hair/tel-icon_eq92ya.svg' alt="Whatsapp" /></a>
+              <a href="https://wa.me/5493537304017" target='_blank' className='contact-imgs'><img  src='https://res.cloudinary.com/dsbekpj9h/image/upload/v1704238891/Brazilian%20Hair/tel-icon_eq92ya.svg' alt="Whatsapp" /></a>
             </div>
             <div className="link">
-              <a href="#https://www.instagram.com/braziliannhair?igsh=amh3NDBxZ2FiM3Zj" className='contact-imgs'><img src="https://res.cloudinary.com/dsbekpj9h/image/upload/v1704237139/Brazilian%20Hair/instagram_xbzbqt.svg" alt="Instagram" /></a>
-            </div>
-            <div className="link">
-              <a href="#" className='contact-imgs'><img src="https://res.cloudinary.com/dsbekpj9h/image/upload/v1704237211/Brazilian%20Hair/email_uk37zt.svg" alt="Email" /></a>
+              <a href="https://www.instagram.com/braziliannhair?igsh=amh3NDBxZ2FiM3Zj" target='_blank' className='contact-imgs'><img src="https://res.cloudinary.com/dsbekpj9h/image/upload/v1704237139/Brazilian%20Hair/instagram_xbzbqt.svg" alt="Instagram" /></a>
             </div>
           </div>
         </div>

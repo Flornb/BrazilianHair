@@ -6,7 +6,7 @@ export const Cronograma = () => {
     return(
         <main id="cronograma"> 
             <div className='title-section'>
-                <div class="section-divisor">
+                <div className="section-divisor">
                     <span className='store-title'>Cronograma Capilar</span>
                 </div>
             </div>

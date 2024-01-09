@@ -56,17 +56,18 @@ header {
     cursor: pointer;
   }
   .icon{
+    border: .2rem solid #130D29;
     color: #130D29;
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
     margin: .3rem;
     padding: .2rem;
     filter: 
-    hue-rotate(220deg)
-    drop-shadow(2px 4px 4px #130D29);
+    hue-rotate(220deg);
+    /* drop-shadow(2px 4px 4px #130D29); */
     transition: 0.2s;
     background-color: #BFC0C0;
-    border-radius: 10px;  
+    border-radius: 15px;  
   }
   .icon:hover {
     transform: scale(1.1, 1.1);

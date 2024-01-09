@@ -2,56 +2,56 @@ import React, { useState } from 'react';
 import './Agenda.css'
 
 export const Agenda = () => {
-  const [selectedServices, setSelectedServices] = useState([]);
-  const [selectedDate, setSelectedDate] = useState('');
-  const [selectedTime, setSelectedTime] = useState('');
+  // const [selectedServices, setSelectedServices] = useState([]);
+  // const [selectedDate, setSelectedDate] = useState('');
+  // const [selectedTime, setSelectedTime] = useState('');
 
-  const handleServiceChange = (e) => {
-    const { value, checked } = e.target;
-    if (checked) {
-      setSelectedServices(prevSelectedServices => [...prevSelectedServices, value]);
-    } else {
-      setSelectedServices(prevSelectedServices => prevSelectedServices.filter(service => service !== value));
-    }
-  };
+  // const handleServiceChange = (e) => {
+  //   const { value, checked } = e.target;
+  //   if (checked) {
+  //     setSelectedServices(prevSelectedServices => [...prevSelectedServices, value]);
+  //   } else {
+  //     setSelectedServices(prevSelectedServices => prevSelectedServices.filter(service => service !== value));
+  //   }
+  // };
 
-  const obtenerHorariosDisponibles = (fechaSeleccionada) => {
-    const dia = new Date(fechaSeleccionada).getDay(); // Obtiene el día de la semana (0: domingo, 1: lunes, ..., 6: sábado)
+  // const obtenerHorariosDisponibles = (fechaSeleccionada) => {
+  //   const dia = new Date(fechaSeleccionada).getDay(); // Obtiene el día de la semana (0: domingo, 1: lunes, ..., 6: sábado)
     
-    if (dia === 1 || dia === 2 || dia === 3 || dia === 4) {
-      return ['08:15', '12:00'];
-    } else if (dia === 5) {
-      return ['08:15']; 
-    } else {
-      return []; 
-    }
-  };
+  //   if (dia === 1 || dia === 2 || dia === 3 || dia === 4) {
+  //     return ['08:15', '12:00'];
+  //   } else if (dia === 5) {
+  //     return ['08:15']; 
+  //   } else {
+  //     return []; 
+  //   }
+  // };
   
-  const [horariosDisponibles, setHorariosDisponibles] = useState([]);
+  // const [horariosDisponibles, setHorariosDisponibles] = useState([]);
   
-  const handleDateChange = (e) => {
-    setSelectedDate(e.target.value);
-    const horarios = obtenerHorariosDisponibles(e.target.value);
-    // Actualizar los horarios disponibles basados en la fecha seleccionada
-    setHorariosDisponibles(horarios);
-  };
+  // const handleDateChange = (e) => {
+  //   setSelectedDate(e.target.value);
+  //   const horarios = obtenerHorariosDisponibles(e.target.value);
+  //   // Actualizar los horarios disponibles basados en la fecha seleccionada
+  //   setHorariosDisponibles(horarios);
+  // };
    
-  const handleTimeChange = (e) => {
-    setSelectedTime(e.target.value);
-  };
+  // const handleTimeChange = (e) => {
+  //   setSelectedTime(e.target.value);
+  // };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
 
-    const data = {
-      servicios: selectedServices.join(', '),
-      fecha: selectedDate,
-      horario: selectedTime
-    };
+  //   const data = {
+  //     servicios: selectedServices.join(', '),
+  //     fecha: selectedDate,
+  //     horario: selectedTime
+  //   };
 
     // Aquí puedes realizar acciones con los datos, como enviarlos a través de una función
-    console.log('Datos del turno:', data);
-  };
+  //   console.log('Datos del turno:', data);
+  // };
 
 
   return (
@@ -62,8 +62,25 @@ export const Agenda = () => {
       </div>
     </div>
     <div className="container-agenda">
-      <h1>Solicitud de Turno</h1>
-      <form id="turno-form" onSubmit={handleSubmit}>
+      <h1 className='text-agenda'>Solicitar Turno</h1>
+      
+      
+      <span className='text-turnos'> DISPONIBILIDAD:
+        <ul>
+        <p>Martes a Viernes (7 turnos por día)
+          <li>8:15 hs (4 turnos)</li>
+          <li>11:00 hs (3 turnos)</li>
+        </p>
+        <p>Sábados (6 turnos)
+          <li>8:15 hs (4 turnos)</li>
+          <li>11:00 hs (2 turnos)</li>
+        </p>
+
+        </ul> 
+      </span>
+      <span className='text-turnos'> Para solicitar turnos haga click en el siguiente botón: </span>
+        <button className="submit-btn" type="submit"><a href='https://reservas-brazilianhair.glide.page' target='_blank'>Solicitar Turno</a></button>
+      {/* <form id="turno-form" onSubmit={handleSubmit}>
         <div className="form-group">
           <label htmlFor="tipo-servicio">Servicio:</label>
           <div className="checkbox-group">
@@ -85,8 +102,8 @@ export const Agenda = () => {
             ))}
           </select>
         </div>
-        <button className="submit-btn" type="submit">Solicitar Turno</button>
-      </form>
+        
+      </form> */}
     </div>
   </main>
   );

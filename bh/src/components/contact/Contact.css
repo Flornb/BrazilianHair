@@ -1,6 +1,6 @@
  
   #contact {
-    background-color: #3B5683;
+    /* background-color: #3B5683; */
     filter: brightness(90%);
     display: flex;
     justify-content: center;
@@ -196,7 +196,7 @@
       font-size: clamp(40px, 10vw, 60px);
     }
     .inputs-contact, .text-area-contact { 
-        width: 90%;
+        width: 100%;
     }
   }
   

@@ -22,6 +22,7 @@
     font-family: 'Poppins';
     color: #3B5683;
     padding: 2em;
+    text-align: justify;
 } 
 .call{
     font-family: 'Poppins';
@@ -30,11 +31,11 @@
     font-size: 1.5em;
 }
 
-.social-networks{
-    width: 40px;
-    height: 40px;
-    margin: 10px;
-    padding: 10px;
+.social-networks img{
+    width: 80px;
+    height: 80px;
+    margin: 0;
+    padding: 1.3rem;
     cursor: pointer;
 }
 .clip-polygon {

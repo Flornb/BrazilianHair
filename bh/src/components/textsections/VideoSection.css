@@ -1,5 +1,6 @@
 .video-section {
     display: flex;
+    flex-direction: row;
     justify-content:center;
     text-align: center;
     align-items: center;
@@ -8,6 +9,7 @@
   }
 .title-video-container{
   flex-direction: column;
+  width: 50%;
 }
   .title-video {
     font-family: 'Playfair Display';
@@ -15,6 +17,12 @@
     color: #3B5683;
     text-shadow: 1px 2px #f7eae7;
     margin: 20px;
+  }
+  .text-video {
+    font-family: 'Poppins';
+    color: #3B5683;
+    padding: 2em;
+
   }
   
   .position-relative {
@@ -25,6 +33,7 @@
   .position-relative video {
     max-width: 100%;
     border-radius: 20px 20px 20px 20px;
+    height: auto;
   }
   
   .play-btn {
@@ -40,5 +49,17 @@
     padding: 50px 50px 50px 50px;
     background-image: url('https://res.cloudinary.com/dsbekpj9h/image/upload/v1704255572/Brazilian%20Hair/play_round_m5inpo.svg');
     opacity: 0.7;
+  }
+
+  @media (max-width: 580px) {
+    .video-section {
+      flex-direction: column;
+    }
+    .title-video-container{
+      width: 100%;
+    }
+    .position-relative {
+      margin-top: 2rem;
+    }
   }
   

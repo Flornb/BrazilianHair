@@ -25,6 +25,7 @@ export const VideoSection = () => {
     <div className="video-section">
       <div className='title-video-container'>
       <h1 className='title-video'>Resultados Increibles</h1>
+      <p className='text-video'> ¡Explora nuestro video a continuación para presenciar los asombrosos resultados de los alisados brasileños y únete a nuestra comunidad de amantes del cabello!</p>
       <button className='submit-btn'><a href="https://wa.me/5493537304017" >
         Contactanos!
       </a></button>
